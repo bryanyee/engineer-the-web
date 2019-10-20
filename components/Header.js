@@ -1,16 +1,14 @@
 import Link from 'next/link';
 
-const linkStyle = {
-  marginRight: 15
-};
+import css from './styles/header.scss'
 
 const Header = () => (
   <div>
     <Link href="/">
-      <a style={linkStyle}>Home</a>
+      <a className={css.link}>Home</a>
     </Link>
     <Link href="/about">
-      <a style={linkStyle}>About</a>
+      <a className={css.link}>About</a>
     </Link>
   </div>
 );
