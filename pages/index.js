@@ -1,19 +1,15 @@
-import Link from 'next/link';
-
 import Layout from '../components/Layout';
+import PostLink from '../components/PostLink';
 
-const PostLink = props => (
-  <li>
-    <Link href={`/p/${props.id}`}>
-      <a>{props.id}</a>
-    </Link>
-  </li>
-);
-
-export default function Blog() {
+export default function App() {
   return (
-    <Layout>
-      <h1>My Blog</h1>
+    <Layout hideHeader>
+      <h1>Engineer The Web</h1>
+      <p>
+        <span>A web software engineering blog by </span>
+        <a href="https://github.com/bryanyee" target="_blank" rel="noopener noreferrer">Bryan Yee</a>
+        .
+      </p>
       <ul>
         <PostLink id="first-post" />
       </ul>
