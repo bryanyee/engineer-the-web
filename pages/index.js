@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import PostLink from '../components/PostLink';
 
+import PAGES from './pages';
+
 export default function App() {
   return (
     <Layout hideHeader>
@@ -10,9 +12,11 @@ export default function App() {
         <a href="https://github.com/bryanyee" target="_blank" rel="noopener noreferrer">Bryan Yee</a>
         .
       </p>
-      <ul>
-        <PostLink id="first-post" />
-      </ul>
+      <div className="mt-5">
+        {PAGES.map(({ date, id, title, }) => (
+          <PostLink date={date} id={id} key={id} title={title} />
+        ))}
+      </div>
     </Layout>
   );
 }

@@ -1,11 +1,21 @@
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
-const PostLink = props => (
-  <li>
-    <Link href={`/p/${props.id}`}>
-      <a>{props.id}</a>
+import css from './styles/postLink.scss';
+
+const PostLink = ({ date, id, title }) => (
+  <div>
+    <Link href={`/p/${id}`}>
+      <a><h3 className="mb-1">{title}</h3></a>
     </Link>
-  </li>
+    <small>{date}</small>
+  </div>
 );
+
+PostLink.propTypes = {
+  date: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
 
 export default PostLink

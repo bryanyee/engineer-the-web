@@ -3,6 +3,11 @@
 a {
   color: $maroon;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $maroon;
+  }
 }
 
 body {
