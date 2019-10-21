@@ -14,9 +14,10 @@ export default function App() {
         .
       </p>
       <div className="mt-5">
-        {PAGES.map(({ date, id, title, }) => (
-          <PostLink date={date} id={id} key={id} title={title} />
-        ))}
+        {PAGES.map(({ date, enabled, id, title, }) => {
+          if (!enabled) return null;
+          return <PostLink date={date} id={id} key={id} title={title} />;
+        })}
       </div>
     </Layout>
   );
