@@ -1,10 +1,10 @@
 import Layout from '../../components/Layout';
 
-import PAGES from '../../lib/pages';
+import { findPage } from '../../lib/pages';
 
-const page = PAGES.find(({ id }) => id = 'a-visual-dive-into-react-fiber');
+const page = findPage('a-jump-into-the-event-loop');
 
-export default function AVisualDiveIntoReactFiber() {
+export default function AJumpIntoTheEventLoop() {
   return (
     <Layout date={page.date} title={page.title}>
       <p>This is the first post.</p>

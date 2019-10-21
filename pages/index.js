@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import PostLink from '../components/PostLink';
 
-import PAGES from '../lib/pages';
+import { PAGES } from '../lib/pages';
 
 export default function App() {
   return (
@@ -16,7 +16,7 @@ export default function App() {
       <div className="mt-5">
         {PAGES.map(({ date, enabled, id, title, }) => {
           if (!enabled) return null;
-          return <PostLink date={date} id={id} key={id} title={title} />;
+          return <PostLink className="mb-5" date={date} id={id} key={id} title={title} />;
         })}
       </div>
     </Layout>
