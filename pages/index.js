@@ -5,8 +5,9 @@ import PAGES from './pages';
 
 export default function App() {
   return (
-    <Layout hideHeader>
-      <h1>Engineer The Web</h1>
+    <Layout
+      header={<h1>Engineer The Web</h1>}
+    >
       <p>
         <span>A web software engineering blog by </span>
         <a href="https://github.com/bryanyee" target="_blank" rel="noopener noreferrer">Bryan Yee</a>
