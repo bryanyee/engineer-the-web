@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 import DefaultHeader from './DefaultHeader';
 import DocumentHead from './DocumentHead';
@@ -21,12 +21,14 @@ const Layout = ({ date, children, header, title }) => (
 );
 
 Layout.defaultProps = {
+  children: null,
   date: null,
   header: <DefaultHeader />,
   title: null,
 };
 
 Layout.propTypes = {
+  children: PropTypes.node,
   date: PropTypes.string,
   header: PropTypes.node,
   title: PropTypes.string,
