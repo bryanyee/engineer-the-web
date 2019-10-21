@@ -6,7 +6,7 @@ import DocumentHead from './DocumentHead';
 
 import '../styles/global.scss';
 
-import css from './styles/layout.scss'
+import css from './Layout.scss'
 
 const Layout = ({ date, children, header, title }) => (
   <Fragment>

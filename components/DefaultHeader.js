@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import css from './styles/header.scss';
+import css from './DefaultHeader.scss';
 
 const DefaultHeader = () => (
   <Link href="/">
