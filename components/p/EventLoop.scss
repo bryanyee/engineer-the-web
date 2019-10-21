@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.circle {
+  background-color: $maroon;
+  border-radius: 50%;
+  display: block;
+  height: 50px;
+  position: relative;
+  right: 25px;
+  width: 50px;
+}
