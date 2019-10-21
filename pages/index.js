@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import PostLink from '../components/PostLink';
 
-import PAGES from './pages';
+import PAGES from '../lib/pages';
 
 export default function App() {
   return (

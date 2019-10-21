@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout';
 
-import PAGES from '../pages';
+import PAGES from '../../lib/pages';
 
 const page = PAGES.find(({ id }) => id = 'a-visual-dive-into-react-fiber');
 
