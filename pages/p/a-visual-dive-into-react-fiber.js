@@ -11,3 +11,5 @@ import PAGES from '../../lib/pages';
 //     </Layout>
 //   );
 // }
+
+export default () => null;
