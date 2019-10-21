@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import css from './styles/postLink.scss';
-
 const PostLink = ({ date, id, title }) => (
   <div>
     <Link href={`/p/${id}`}>
